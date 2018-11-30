@@ -16,8 +16,9 @@ import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import NavPills from "components/NavPills/NavPills.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
-
+import CustomInput from "components/CustomInput/CustomInput.jsx";
 import profile from "assets/img/faces/anle.jpg";
+import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
@@ -29,12 +30,42 @@ import work2 from "assets/img/phone2.jpg";
 import work3 from "assets/img/phone3.jpg";
 import work4 from "assets/img/phone4.jpg";
 import work5 from "assets/img/phone5.jpg";
-import { Apps, CloudDownload, Map } from "@material-ui/icons";
+import { Apps, CloudDownload, Map, LocationSearching, Filter, Category, Search } from "@material-ui/icons";
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 import SectionCarousel from "../Components/Sections/SectionCarousel";
 import SearchProduct from 'components/Custom/Search.jsx';
-import MyFancyComponent from 'components/Map/index.jsx';
+import MapWithASearchBox from "../../components/Map/SearchBox";
+import MapWithADirectionsRenderer from "../../components/Map/DirectionsRenderer";
+import MapWithAMarkerWithLabel from "../../components/Map/MarkerLabel";
+import Drawer from "../../components/Map/Drawer";
+
 class HomePage extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      showDrawer: false
+    }
+  }
+  closeDrawer(){
+    console.log("CloseDrawer")
+    this.setState({
+      showDrawer: false
+    })
+  }
+  
+  openDrawer() {
+    console.log('openDrawer')
+    this.setState({
+      showDrawer: !this.state.showDrawer
+    })
+  }
+
+  onClick(item, index) {
+    console.log(item.target.innerText)
+    console.log(index)
+  }
+
   render() {
     const { classes, ...rest } = this.props;
     const imageClasses = classNames(
@@ -57,65 +88,132 @@ class HomePage extends React.Component {
           {...rest}
         />
         <Parallax small filter image={require("assets/img/bg_new.jpg")}>
-          <div className={classes.container} style={{zIndex:100}}>
-          <div style={{flex:1, height:"100%", justifyContent:"center", alignItems:"center", display:"flex", flexDirection:"column"}}>
-          <h3 style={{color:'white', fontFamily:"Roboto Slab"}}>FREE MARKETPLACE FOR EVERYONE</h3>
-          <SearchProduct />
-          <div style={{width:"50%"}}>
-          <GridContainer justify="center">
-          <GridItem  xs={12} sm={12} md={6}>
-          <div style={{justifyContent:'center', alignItems:'center', display:'flex', flexDirection:'column', alignSelf:'flex-end'}}>
-          <p style={{color:'white', textAlign:'center'}}>You have something to sell?</p>
-          <Button color="rose" round>
-                  Sell Now
+          <div className={classes.container} style={{ zIndex: 100 }}>
+            <div style={{ flex: 1, height: "100%", justifyContent: "center", alignItems: "center", display: "flex", flexDirection: "column" }}>
+              <h3 style={{ color: 'white', fontFamily: "Roboto Slab" }}>FREE MARKETPLACE FOR EVERYONE</h3>
+              <SearchProduct />
+              <div style={{ width: "50%" }}>
+                <GridContainer justify="center">
+                  <GridItem xs={12} sm={12} md={6}>
+                    <div style={{ justifyContent: 'center', alignItems: 'center', display: 'flex', flexDirection: 'column', alignSelf: 'flex-end' }}>
+                      <p style={{ color: 'white', textAlign: 'center' }}>You have something to sell?</p>
+                      <Button color="rose" round>
+                        Sell Now
           </Button>
-          </div>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={6}>
-          <div style={{justifyContent:'center', alignItems:'center', display:'flex', flexDirection:'column'}}>
-          <p style={{color:'white', textAlign:'center'}}>You want to buy something?</p>
-          <Button color="info" round>
-                  Find Now
+                    </div>
+                  </GridItem>
+                  <GridItem xs={12} sm={12} md={6}>
+                    <div style={{ justifyContent: 'center', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
+                      <p style={{ color: 'white', textAlign: 'center' }}>You want to buy something?</p>
+                      <Button color="info" round>
+                        Find Now
           </Button>
-          </div>
-          </GridItem>
-          </GridContainer>
-          </div>
-          </div>
+                    </div>
+                  </GridItem>
+                </GridContainer>
+              </div>
+            </div>
           </div>
         </Parallax>
-
         <div className={classNames(classes.main, classes.mainRaised)}>
+          <GridContainer justify="center">
+            <h2 className={classes.title}>Searching for nearest seller</h2>
+            <GridItem xs={12} sm={12} md={12} style={{ display: 'flex', justifyContent: 'center' }}>
+              <div style={{ display: 'flex', flexDirection: 'row', width: '50%' }}>
+                <CustomInput
+                  labelText="What do you want to buy?"
+                  id="float"
+                  formControlProps={{
+                    fullWidth: true
+                  }}
+                />
+                <Button color="rose" round style={{ alignSelf: 'center' }} onClick={() => this.openDrawer()}>
+                  <Search style={classes.icon} />Search
+          </Button>
+
+              </div>
+            </GridItem>
+            <div style={{ display: 'flex', flexDirection: 'row', width: '50%' }}>
+              <GridItem xs={12} sm={12} md={4}>
+                <CustomDropdown
+                  hoverColor="info"
+                  dropdownHeader="Dropdown Header"
+                  buttonIcon="settings"
+                  buttonText="Địa điểm"
+                  buttonProps={{
+                    className: classes.navLink,
+                    color: "transparent"
+                  }}
+                  dropdownList={[
+                    "Action",
+                    "Another action",
+                    "Something else here",
+                    { divider: true },
+                    "Separated link",
+                    { divider: true },
+                    "One more separated link"
+                  ]}
+                  onClick={this.onClick.bind(this)}
+                />
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4}>
+                <CustomDropdown
+                  hoverColor="info"
+                  dropdownHeader="Loại sản phẩm"
+                  buttonIcon={() => <Category style={classes.icon} />}
+                  buttonText="Danh mục"
+                  buttonProps={{
+                    className: classes.navLink,
+                    color: "transparent"
+                  }}
+                  dropdownList={[
+                    "Điện tử",
+                    "Nhà",
+                    "Xe",
+                    { divider: true },
+                    "Quần áo",
+                    { divider: true },
+                    "Trang sức"
+                  ]}
+                />
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4}>
+                <CustomDropdown
+                  hoverColor="info"
+                  dropdownHeader="Dropdown Header"
+                  buttonIcon="filter"
+                  buttonText="Lọc"
+                  buttonProps={{
+                    className: classes.navLink,
+                    color: "transparent"
+                  }}
+                  dropdownList={[
+                    "Action",
+                    "Another action",
+                    "Something else here",
+                    { divider: true },
+                    "Separated link",
+                    { divider: true },
+                    "One more separated link"
+                  ]}
+                />
+              </GridItem>
+            </div>
+          </GridContainer>
+          <div style={{position:'relative' }}>
+          <MapWithAMarkerWithLabel
+            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVfQ1cotCxn5mHuuYmp9tdf45YIYpd8Ww&v=3.exp&libraries=geometry,drawing,places"
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={<div style={{ height: `800px` }} />}
+            mapElement={<div style={{ height: `100%` }} />}
+          />
+          <Drawer show={this.state.showDrawer} onClose={this.closeDrawer.bind(this)}
+          />
+          </div>
+
           <div>
             <div className={classes.container}>
-              {/* <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={6}>
-                  <div className={classes.profile}>
-                  <div>
-                      <img src={profile} alt="..." className={imageClasses} />
-                    </div>
-                    <div className={classes.name}>
-                      <h3 className={classes.title}>An Le</h3>
-                      <h6>Lệnh truy nã</h6> 
-                      <Button justIcon link className={classes.margin5}>
-                        <i className={"fab fa-twitter"} />
-                      </Button>
-                      <Button justIcon link className={classes.margin5}>
-                        <i className={"fab fa-instagram"} />
-                      </Button>
-                      <Button justIcon link className={classes.margin5}>
-                        <i className={"fab fa-facebook"} />
-                      </Button>
-                    </div>
-                  </div>
-                </GridItem>
-              </GridContainer>
-              <div className={classes.description}>
-                <p>
-                Đối tượng ngáo đá đâm chết 1 người và khiến 3 người khác bị thương. Gây án xong, đối tượng tự đâm mình 4 nhát nhưng không chết..{" "}
-                </p>
-              </div> */}
-              <SectionCarousel/>
+              <SectionCarousel />
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={12} className={classes.navWrapper}>
                   <NavPills
@@ -234,7 +332,6 @@ class HomePage extends React.Component {
               </GridContainer>
             </div>
           </div>
-          <MyFancyComponent/>
         </div>
         <Footer />
       </div>
