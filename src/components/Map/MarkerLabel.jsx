@@ -1,9 +1,13 @@
 import React from 'react'
+import work1 from "assets/img/phone1.jpg";
+import { GpsFixed } from "@material-ui/icons";
+import work2 from "assets/img/gps.png";
 const { compose } = require("recompose");
 const {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
+  Marker
 } = require("react-google-maps");
 const { MarkerWithLabel } = require("react-google-maps/lib/components/addons/MarkerWithLabel");
 /*global google*/
@@ -12,7 +16,7 @@ const MapWithAMarkerWithLabel = compose(
   withGoogleMap
 )(props =>
   <GoogleMap
-    defaultZoom={13}
+    defaultZoom={16}
     defaultCenter={{ lat: 10.857278, lng: 106.752017 }}
   >
     <MarkerWithLabel
@@ -44,13 +48,15 @@ const MapWithAMarkerWithLabel = compose(
       </div>
     </MarkerWithLabel>
     <MarkerWithLabel
+      icon={{
+        url: work2
+      }}
       position={{ lat: 10.853168, lng: 106.753165 }}
       labelAnchor={new google.maps.Point(0, 0)}
       labelStyle={{ backgroundColor: "green", fontSize: "12px", padding: "2px", color:'white' }}
     >
       <div>
-        <p>Trung Tâm Thương Mại</p>
-        <p>480.000.000d/Tháng</p>
+        <p>Vị trí của bạn</p>
       </div>
     </MarkerWithLabel>
   </GoogleMap>

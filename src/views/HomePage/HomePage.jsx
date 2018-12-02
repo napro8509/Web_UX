@@ -87,7 +87,7 @@ class HomePage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax small filter image={require("assets/img/bg_new.jpg")}>
+        <Parallax filter image={require("assets/img/bg_new.jpg")}>
           <div className={classes.container} style={{ zIndex: 100 }}>
             <div style={{ flex: 1, height: "100%", justifyContent: "center", alignItems: "center", display: "flex", flexDirection: "column" }}>
               <h3 style={{ color: 'white', fontFamily: "Roboto Slab" }}>FREE MARKETPLACE FOR EVERYONE</h3>
