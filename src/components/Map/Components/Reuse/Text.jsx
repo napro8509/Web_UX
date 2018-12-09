@@ -39,9 +39,13 @@ class Text extends React.Component {
                 return (
                     <h4 className={classes.title} style={{ margin: 0 }}>{title}</h4>
                 )
+            case 'h4-price':
+                return (
+                    <h4 className={classes.title} style={{ margin: 0, color:"red" }}>{title}</h4>
+                )
             case 'p':
                 return (
-                    <p>{title}</p>
+                    <p style={{ margin: 0 }}>{title}</p>
                 )
             case 'image':
                 return (

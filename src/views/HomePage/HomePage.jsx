@@ -129,10 +129,12 @@ class HomePage extends React.Component {
                 />
                 <Button color="rose" round style={{ alignSelf: 'center' }} onClick={() => this.openDrawer()}>
                   <Search style={classes.icon} />Search
-          </Button>
-
+               </Button>
               </div>
             </GridItem>
+              <div style={{padding:10, borderRadius:10, borderWidth:1, borderColor:'red',borderStyle:'solid'}}>
+              <p>Iphone x</p>
+              </div>
             <div style={{ display: 'flex', flexDirection: 'row', width: '50%' }}>
               <GridItem xs={12} sm={12} md={4}>
                 <CustomDropdown

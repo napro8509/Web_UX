@@ -16,30 +16,35 @@ const numbers =[{
   place: 'Số 3 đường 41 phường linh đông, quận thử đức',
   price: '12.000.000',
   image: work1,
+  distance: '1.5 km'
 },{
     name: 'Trung Tâm Thương Mại',
     description: 'Trung tâm nằm vị trí đắc địa, kinh doanh tốt cần cho thuê',
     place: 'Số 3 đường 41 phường linh đông, quận thử đức',
     price: '12.000.000',
     image: work2,
+    distance: '2.5 km'
 },{
     name: 'Nhà đất 100m2',
     description: 'Nhà 2 mặt tiền, rộng rãi thoáng mát, có chỗ đậu xe hơi',
     place: 'Số 3 đường 41 phường linh đông, quận thử đức',
     price: '5.000.000.000',
     image: work3,
+    distance: '3.5 km'
 },{
     name: 'Xe oto Toyota Mescedes Suzuki',
     description: 'Xe nhập nguyên chiếc từ campuchia chất lượng tốt, giá rẻ',
     place: 'Số 3 đường 41 phường linh đông, quận thử đức',
     price: '500.000.000',
     image: studio1,
+    distance: '4 km'
 },{
     name: 'Tiệm hớt tóc bảo @',
     description: 'Ngay trung tâm quận 1, cần sang gấp',
     place: 'Số 3 đường 41 phường linh đông, quận thử đức',
     price: '52.000.000',
     image: work5,
+    distance: '6 km'
 }]
 
 class Drawer extends React.Component {
