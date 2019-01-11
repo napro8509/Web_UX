@@ -31,35 +31,35 @@ class ProductCotent extends React.Component {
     return (
       <Card className={classes.card}>
         <div style={{ marginTop:20, paddingLeft:20, paddingRight:20}}>
-            <h3 className="font-weight-bold mb-3 p-0" ><strong>MÔ TẢ SẢN PHẨM </strong></h3>
-            <p>Hãng sản xuất:	Apple</p>
-            <p>Loại màn hình:	Super Retina OLED</p>
-            <p>Kích thước màn hình:	6.5 inches</p>
-            <p>Độ phân giải màn hình:	1242 x 2688 pixel</p>
-            <p>Hệ điều hành:	iOS</p>
+            <h3 className="font-weight-bold mb-3 p-0" ><strong>PRODUCT DESCRIPTION </strong></h3>
+            <p>Manufacturer:	Apple</p>
+            <p>Screen type:	Super Retina OLED</p>
+            <p>Screen size:	6.5 inches</p>
+            <p>Screen resolution:	1242 x 2688 pixel</p>
+            <p>Operating system:	iOS</p>
             <p>Chipset:	Apple A12 Bionic 6 nhân</p>
             <p>GPU:	Apple GPU 4 nhân</p>
-            <p>Bộ nhớ đệm / Ram:	64 GB, 4 GB RAM</p>
-            <p>Bộ nhớ trong:	256 GB</p>
-            <p>Camera sau:	12 MP</p>
-            <p>Camera trước:	7 MP</p>
-            <p style={{marginRight:30}}>Về ngoại hình, Apple iPhone XS Max 64GB không có sự khác biệt so với iPhone X khi sở hữu màn hình khuyết đỉnh, sử dụng khung thép không rỉ và mặt lưng kính bóng bẩy. Bốn góc cũng được bo tròn tạo cảm giác cầm nắm tốt hơn. Sản phẩm được trang bị ba màu truyền thống là bạc, xám và vàng cho người dùng lựa chọn.</p>
-            <p style={{marginRight:30}}>Apple iPhone XS Max 64GB sở hữu màn hình lớn lên đến 6.5 inch nhưng kích thước vẫn rất gọn gàng (nhỏ hơn cả iPhone 8 Plus màn hình 5.5 inch) nhờ việc tối ưu hóa phần viền. Màn hình có độ phân giải 1242 x 2688 pixels đạt chuẩn Super Retina HD, mật độ điểm ảnh 458 ppi trên tấm nền OLED, mang lại những hình ảnh rất sắc nét và chính xác. Bên cạnh đó, máy được trang bị công nghệ hiển thị HDR10, Dolby Vision tần số quét được tăng lên 120 Hz ngang với iPad Pro.</p>
+            <p>Cache / Ram:	64 GB, 4 GB RAM</p>
+            <p>Internal memory:	256 GB</p>
+            <p>Rear camera:	12 MP</p>
+            <p>Front camera:	7 MP</p>
+            <p style={{marginRight:30}}>In terms of appearance, Apple iPhone XS Max 64GB is not different from the iPhone X when owning a topless screen, using stainless steel frame and polished glass back. The four corners are also rounded to create a better grip. Products are equipped with three traditional colors of silver, gray and gold for users to choose.</p>
+            <p style={{marginRight:30}}>Apple iPhone XS Max 64GB owns a large screen up to 6.5 inches but the size is still very neat (smaller than the iPhone 8 Plus 5.5 inch screen) thanks to the optimization of the border. The screen has a resolution of 1242 x 2688 pixels with Super Retina HD standard, pixel density of 458 ppi on OLED panels, bringing images very sharp and precise. In addition, the device is equipped with HDR10 display technology, Dolby Vision scanning frequency is increased to 120 Hz on par with iPad Pro.</p>
             <View style={{width:600, height:300}}>
                 <img style={{ height:400, display: 'block',marginLeft:'auto',marginRight:'auto',marginBottom: 10}} className="img-fluid" src="http://image.nghenhinvietnam.vn/w1024/Uploaded/2018/pdgft/2018_09_21/xsmax/iphone_xs_max_20_brnv.jpg" alt="Sample image"/>
             </View>
-              <p style={{marginRight:30}}>Apple iPhone XS Max 64GB có hiệu suất cao nhờ được trang bị chip A12 Bionic sản xuất trên tiến trình 7 nm, kết hợp công nghệ máy học và trí tuệ nhân tạo thông minh. Qua đó, cho các tác vụ sử dụng hằng ngày hoạt động vô cùng nhanh chóng, mượt mà Bên cạnh đó, RAM 4GB và bộ nhớ trong cực khủng 64GB thoải mái lưu trữ dữ liệu, game, phim 4K…</p>
-              <p style={{marginRight:30}}>Apple iPhone XS Max 64GB vẫn sử dụng cụm camera kép 12MP, nhưng flash TrueTone đã được nâng cấp để cân bằng ánh sáng tốt hơn. Đồng thời, camera cũng được nâng cấp với tính năng điều chỉnh độ xóa phông giúp bạn dễ dàng bắt trọn chân thực từng khoảnh khắc. Bên cạnh đó, camera trước của máy sở hữu độ phân giải 7MP có tính năng nhận diện khuôn mặt cùng khả năng quay video Full HD, mang lại những bức ảnh, thước phim có chất lượng hoàn hảo.</p>
+              <p style={{marginRight:30}}>Apple iPhone XS Max 64GB is high-performance thanks to being equipped with Bionic A12 chip manufactured on 7 nm process, combining machine learning technology and intelligent artificial intelligence. Thereby, for daily use tasks extremely fast, smooth operation. Besides, 4GB RAM and huge memory in 64GB comfortable data storage, games, 4K movies ...</p>
+              <p style={{marginRight:30}}>Apple iPhone XS Max 64GB still uses the 12MP dual camera cluster, but TrueTone flash has been upgraded to better balance the light. At the same time, the camera is also upgraded with a font correction feature that makes it easy to capture true moments from time to time. In addition, the front camera of the device has 7MP resolution, which features face detection and Full HD video recording capabilities, delivers perfect quality photos and videos.</p>
               <View style={{width:600, height:300}}>
                 <img style={{ height:400, display: 'block',marginLeft:'auto',marginRight:'auto',marginBottom: 10}} className="img-fluid" src="https://cdn.idropnews.com/wp-content/uploads/2018/09/14114222/Win-an-iPhone-XS-Max-iDrop-News-Apple-iPhone-XS-Max-Giveaway.jpg" alt="Sample image"/>
             </View>
-              <p style={{marginRight:30}}>Apple iPhone XS Max 64GB được nâng cấp tiêu chuẩn chống bụi – chống nước IP68, giúp người dùng hoàn toàn yên tâm khi mang ra hồ bơi chụp ảnh, quay phim, nghe nhạc hay cần nghe một cuộc gọi quan trọng giữa trời mưa lớn.</p>
+              <p style={{marginRight:30}}>Apple iPhone XS Max 64GB has been upgraded to IP68 waterproof and dustproof standard, giving users complete peace of mind when taking photos, filming, listening to music or listening to an important call between heavy rain.</p>
               <View style={{width:600, height:300}}>
                 <img style={{ height:400, display: 'block',marginLeft:'auto',marginRight:'auto',marginBottom: 10}} className="img-fluid" src="https://cdn.mobilesyrup.com/wp-content/uploads/2018/09/iphone-xs-iphone-xs-max-header-1.jpg" alt="Sample image"/>
             </View>
-              <p style={{marginRight:30}}>Mua Apple iPhone XS Max 64GB giá rẻ cùng chế độ bảo hành tốt ở đâu? Hãy đến với CellphoneS, hệ thống bán lẻ điện thoại trên toàn quốc hiện sẽ cung cấp cho khách hàng sản phẩm Apple iPhone XS Max 64GB trong thời gian sớm nhất khi được nhà sản xuất ra mắt cùng với việc bán mức giá vô cùng hấp dẫn, chế độ hậu mãi vô cùng tốt. Đối với các khách hàng ở xa có nhu cầu mua sản phẩm có thể tham khảo qua dịch vụ mua hàng và thanh toán tận nơi miễn phí của CellphoneS. Đặc biệt, đối với những sản phẩm mới ra mắt, khách hàng có thể đặt cọc online trước một khoản tiền để ưu tiên nhận máy và sở hữu nhiều phần quà hấp dẫn.</p>
-            <h3 className="font-weight-bold mb-3 p-0" ><strong>Địa chỉ </strong></h3>
-            <p style={{marginTop:-10, marginBottom:20}}>538 Cách Mạng Tháng 8, Phường 11, Quận 3, Hồ Chí Minh, Việt Nam</p>
+              <p style={{marginRight:30}}>Where to buy cheap Apple iPhone XS Max 64GB with a good warranty? Come to CellphoneS, the nationwide phone retail system will now provide Apple iPhone XS Max 64GB customers at the earliest possible time when the manufacturer launches along with selling extremely attractive prices. , extremely good after sales service. For remote customers wishing to purchase products, please refer to CellphoneS 'free shopping and payment service. In particular, for new products launched, customers can deposit money online in advance to prioritize receiving machines and own many attractive gifts.</p>
+            <h3 className="font-weight-bold mb-3 p-0" ><strong>Address </strong></h3>
+            <p style={{marginTop:-10, marginBottom:20}}>538 Cach Mang Thang 8, Ward 11, District 3, Ho Chi Minh City, Vietnam</p>
             <View style={{width:600, height:300}}>
                 <img style={{ height:400, display: 'block',marginLeft:'auto',marginRight:'auto',marginBottom: 10}} className="img-fluid" src="https://reservation.booking.expert/api/googlemap.png?h=bh94zklv&lang=vi-vn&marker=red&size=1280x550&zoom=15" alt="Sample image"/>
             </View>

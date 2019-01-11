@@ -109,7 +109,7 @@ class UserInformation extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <Card className={classes.card} style={{height: 110}}>
+      <Card className={classes.card} style={{height: 130}}>
            <section className="my-5">
               <MDBRow style={{marginTop:-40}}>
                 <MDBCol lg="5" className="text-center text-lg-left" style={{marginLeft: 70}}>
@@ -123,9 +123,9 @@ class UserInformation extends React.Component {
                       <MDBRow className="mb-3">
                         <MDBCol xl="10" md="11" size="10">
                           <div style={{marginLeft: -40, marginTop: -5}}>
-                            <p style={{fontSize : 20, display: 'inline-block', marginRight: 5}}>Đánh giá của bạn:</p>
+                            <p style={{fontSize : 20, display: 'inline-block', marginRight: 5}}>Your review:</p>
                             <Rating onChange={this.getValueOfRating} initialRating={4.5} style={{color:'#2196f2',display: 'inline-block'}} emptySymbol="fa fa-star-o fa-2x" fullSymbol="fa fa-star fa-2x" />  
-                            <MDBBtn onClick={this.onclickRating} color="primary" style={{display: 'inline-block', height:30, padding: '5px 15px', marginTop: -10, marginLeft: 10}}>Đánh giá <MDBIcon icon="send-o" className="ml-1" /></MDBBtn>
+                            <MDBBtn onClick={this.onclickRating} color="primary" style={{display: 'inline-block', height:30, padding: '5px 15px', marginTop: -10, marginLeft: 10}}>Evaluate <MDBIcon icon="send-o" className="ml-1" /></MDBBtn>
                           </div>
                     </MDBCol>
                   </MDBRow>

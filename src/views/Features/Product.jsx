@@ -86,17 +86,14 @@ class Product extends Component {
     <hr className="my-5"/>
       <Row>
         <Col lg="5" xl="4">
-          <View hover className="rounded z-depth-1-half mb-lg-0 mb-4">
-            <img className="img-fluid" src="https://znews-photo.zadn.vn/w820/Uploaded/neg_wpeczyr/2018_09_21/iPhone_XS_Max_zing_2.JPG" alt="Sample image"/>
-            <a><Mask overlay="white-slight"/></a>
-          </View>
+            <img style={{marginTop: 30}} className="img-fluid" src="https://znews-photo.zadn.vn/w820/Uploaded/neg_wpeczyr/2018_09_21/iPhone_XS_Max_zing_2.JPG" alt="Sample image"/>
         </Col>
         <Col lg="7" xl="8">
-          <h3 className="font-weight-bold mb-3 p-0"><strong>Điện thoại Iphone Xs Max 256gb Sliver</strong></h3>
-          <p className="dark-grey-text">Apple iPhone XS Max 64GB sở hữu màn hình lớn lên đến 6.5 inch nhưng kích thước vẫn rất gọn gàng (nhỏ hơn cả iPhone 8 Plus màn hình 5.5 inch) nhờ việc tối ưu hóa phần viền. Màn hình có độ phân giải 1242 x 2688 pixels đạt chuẩn Super Retina HD, mật độ điểm ảnh 458 ppi trên tấm nền OLED, mang lại những hình ảnh rất sắc nét và chính xác. Bên cạnh đó, máy được trang bị công nghệ hiển thị HDR10, Dolby Vision tần số quét được tăng lên 120 Hz ngang với iPad Pro.Apple iPhone XS Max 64GB được nâng cấp tiêu chuẩn chống bụi – chống nước IP68, giúp người dùng hoàn toàn yên tâm khi mang ra hồ bơi chụp ảnh, quay phim, nghe nhạc hay cần nghe một cuộc gọi quan trọng giữa trời mưa lớn.
+          <h3 className="font-weight-bold mb-3 p-0"><strong>Iphone Xs Max phone 256gb Sliver</strong></h3>
+          <p className="dark-grey-text">Apple iPhone XS Max 64GB owns a large screen up to 6.5 inches but the size is still very neat (smaller than the iPhone 8 Plus 5.5 inch screen) thanks to the optimization of the border. The screen has a resolution of 1242 x 2688 pixels with Super Retina HD standard, pixel density of 458 ppi on OLED panels, bringing images very sharp and precise. In addition, the device is equipped with HDR10 display technology, Dolby Vision scanning frequency is increased to 120 Hz on the same level as the iPad Pro.Apple iPhone XS Max 64GB is upgraded to anti-dust standard - IP68 waterproof, to help users complete peace of mind when taking photos to the pool, taking photos, listening to music or listening to an important call in the middle of heavy rain.
 
 </p>
-          <h3 className="font-weight-bold mb-3 p-0" style={{fontSize: 16}}><strong style={{color: "#007bff"}}>Giá: 20.000.000 VNĐ</strong></h3>
+          <h3 className="font-weight-bold mb-3 p-0" style={{fontSize: 16}}><strong style={{color: "#007bff"}}>Price: 20.000.000 VNĐ</strong></h3>
         </Col>
       </Row>
       <hr className="my-5" />

@@ -31,7 +31,7 @@ class Share extends React.Component {
     return (
       <Card className={classes.card}>
         <div style={{marginTop: 10, marginBottom:10}}>
-        <h3 className="font-weight-bold mb-3 p-0" style={{display:'inline-block', marginTop:10, marginLeft:10}}><strong>Chia sẻ tin đăng này cho bạn bè: </strong></h3>
+        <h3 className="font-weight-bold mb-3 p-0" style={{display:'inline-block', marginTop:10, marginLeft:10}}><strong>Share this post to a friend: </strong></h3>
         <img style={{display:'inline-block', marginLeft:20}} alt="facebook" src="https://static.chotot.com.vn/storage/chotot-icons/svg/circle-facebook.svg" height="40" width="40" />
         <img style={{display:'inline-block', marginLeft:10}} alt="messenger" src="https://static.chotot.com.vn/storage/chotot-icons/svg/circle-messenger.svg" height="40" width="40"></img>
         <img style={{display:'inline-block', marginLeft:10}} alt="zalo" src="https://static.chotot.com.vn/storage/chotot-icons/svg/circle-zalo.svg" height="40" width="40"></img>

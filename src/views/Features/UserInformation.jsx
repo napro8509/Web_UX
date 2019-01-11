@@ -92,8 +92,8 @@ class UserInformation extends React.Component {
               Ấn Lê
             </Avatar>
           }
-          title="Lê Hoang Thiên Ấn (Bán Chuyên)"
-          subheader="Liên hệ: 0973043044"
+          title="Lê Hoang Thiên Ấn (Sell Specialist)"
+          subheader="Contact: 0973043044"
         />
       </Card>
     );

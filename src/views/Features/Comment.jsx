@@ -252,11 +252,11 @@ class CommentPage extends React.Component {
       <Comment.Content>
         <Comment.Author as='a'>Hiếu Phan</Comment.Author>
         <Comment.Metadata>
-          <div>Hôm nay lúc 5:42PM</div>
+          <div>Today at 5:42 PM</div>
         </Comment.Metadata>
-        <Comment.Text>Qua xem hàng thấy ok nhưng không chịu bớt giá.</Comment.Text>
+        <Comment.Text>Seeing the goods is ok but not willing to reduce the price.</Comment.Text>
         <Comment.Actions>
-          <Comment.Action>Trả lời</Comment.Action>
+          <Comment.Action>Reply</Comment.Action>
         </Comment.Actions>
       </Comment.Content>
     </Comment>
@@ -266,13 +266,13 @@ class CommentPage extends React.Component {
       <Comment.Content>
         <Comment.Author as='a'>Giô Na</Comment.Author>
         <Comment.Metadata>
-          <div>Hôm qua lúc 12:30AM</div>
+          <div>Yesterday at 12:30 AM</div>
         </Comment.Metadata>
         <Comment.Text>
-          <p>Hàng trả bảo hành nhưng đã hết Apple care, mọi người cẩn thận nha.</p>
+          <p>Goods paid warranty but out of Apple care, everyone is careful.</p>
         </Comment.Text>
         <Comment.Actions>
-          <Comment.Action>Trả lời</Comment.Action>
+          <Comment.Action>Reply</Comment.Action>
         </Comment.Actions>
       </Comment.Content>
       <Comment.Group>
@@ -281,11 +281,11 @@ class CommentPage extends React.Component {
           <Comment.Content>
             <Comment.Author as='a'>Rin Trần</Comment.Author>
             <Comment.Metadata>
-              <div>Vừa xong</div>
+              <div>Just comment</div>
             </Comment.Metadata>
-            <Comment.Text>Đó là chuyện bình thường bạn ơi!</Comment.Text>
+            <Comment.Text>That's normal, friend!</Comment.Text>
             <Comment.Actions>
-              <Comment.Action>Trả lời</Comment.Action>
+              <Comment.Action>Reply</Comment.Action>
             </Comment.Actions>
           </Comment.Content>
         </Comment>
@@ -297,19 +297,19 @@ class CommentPage extends React.Component {
       <Comment.Content>
         <Comment.Author as='a'>Dũng Việt</Comment.Author>
         <Comment.Metadata>
-          <div>5 ngày trước</div>
+          <div>5 days ago</div>
         </Comment.Metadata>
-        <Comment.Text>Máy đẹp.</Comment.Text>
+        <Comment.Text>Beautiful machine.</Comment.Text>
         <Comment.Actions>
-          <Comment.Action>Trả lời</Comment.Action>
+          <Comment.Action>Reply</Comment.Action>
         </Comment.Actions>
       </Comment.Content>
     </Comment>
 
-    <Form Trả lời style={{marginLeft:20, marginTop:10}}>
+    <Form Reply style={{marginLeft:20, marginTop:10}}>
       <Form.TextArea />
       <Button variant="contained" size="big" className={classes.button} style={{backgroundColor:"#2196f3", color: "#FFFFFF", marginLeft: 0, marginTop: -5}}>
-        Bình Luận
+      Comment
         <SendIcon style={{color: "#FFFFFF", marginLeft: 5}}  />
       </Button>
     </Form>

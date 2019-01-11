@@ -120,7 +120,7 @@ class ProductConcern extends Component {
       <Card style={{paddingLeft:30,paddingRight:30}} className={classes.card}>
         <section className="text-center my-5">
         <h2 className="h1-responsive font-weight-bold my-5">
-        Sản phẩm liên quan
+        Related products
         </h2>
         <MDBRow className="d-flex justify-content-center">
 
