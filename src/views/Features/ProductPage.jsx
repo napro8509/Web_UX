@@ -1,107 +1,47 @@
 import React from "react";
-import {  MDBRow, MDBCol, MDBCard, MDBAvatar, MDBCardBody, MDBIcon, MDBBtn } from "mdbreact";
+import { MDBRow, MDBCol, MDBCard, MDBAvatar, MDBCardBody, MDBIcon, MDBBtn } from "mdbreact";
+import HeaderLinks from "components/Header/HeaderLinks.jsx";
+import Header from "components/Header/Header.jsx";
+import ProductContent from './ProductContent.jsx';
+import Parallax from "components/Parallax/Parallax.jsx";
+import Button from "components/CustomButtons/Button.jsx";
+import GridContainer from "components/Grid/GridContainer.jsx";
+import GridItem from "components/Grid/GridItem.jsx";
+import CustomParallax from "../../components/Parallax/CustomParallax.jsx";
+import withStyles from "@material-ui/core/styles/withStyles";
+import classNames from "classnames";
+import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
+import ProductConcern from "./ProductConcern.jsx";
 
 class ProductPage extends React.Component {
-  constructor(props)
-  {
+  constructor(props) {
     super(props)
   }
-  render()
-  {
+  render() {
+    const { classes, ...rest } = this.props;
     return (
-     <div>
-        <MDBCard className="my-5 px-1 pb-5 text-center">
-          <MDBCardBody>
-            <h2 className="h1-responsive font-weight-bold my-5">
-              Our amazing team
-            </h2>
-            <p className="grey-text w-responsive mx-auto mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-              error amet numquam iure provident voluptate esse quasi, veritatis
-              totam voluptas nostrum quisquam eum porro a pariatur veniam.
-            </p>
-            <MDBRow>
-              <MDBCol md="4" className="mb-md-0 mb-5">
-                {/* <MDBAvatar
-                  tag="img"
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg"
-                  className="rounded z-depth-1-half img-fluid"
-                  alt="Sample avatar"
-                /> */}
-                <h4 className="font-weight-bold dark-grey-text my-4">
-                  Maria Kate
-                </h4>
-                <h6 className="text-uppercase grey-text mb-3">Photographer</h6>
-                <MDBBtn tag="a" floating size="sm" className="mx-1 mb-0 btn-fb">
-                  <MDBIcon icon="facebook" />
-                </MDBBtn>
-                <MDBBtn
-                  tag="a"
-                  floating
-                  size="sm"
-                  className="mx-1 mb-0 btn-dribbble"
-                >
-                  <MDBIcon icon="dribbble" />
-                </MDBBtn>
-                <MDBBtn tag="a" floating size="sm" className="mx-1 mb-0 btn-tw">
-                  <MDBIcon icon="twitter" />
-                </MDBBtn>
-              </MDBCol>
-  
-              <MDBCol md="4" className="mb-md-0 mb-5">
-                {/* <MDBAvatar
-                  tag="img"
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg"
-                  className="rounded z-depth-1-half img-fluid"
-                  alt="Sample avatar"
-                /> */}
-                <h4 className="font-weight-bold dark-grey-text my-4">John Doe</h4>
-                <h6 className="text-uppercase grey-text mb-3">
-                  Front-end Developer
-                </h6>
-                <MDBBtn
-                  tag="a"
-                  floating
-                  size="sm"
-                  className="mx-1 mb-0 btn-email"
-                >
-                  <MDBIcon icon="envelope" />
-                </MDBBtn>
-                <MDBBtn tag="a" floating size="sm" className="mx-1 mb-0 btn-fb">
-                  <MDBIcon icon="facebook" />
-                </MDBBtn>
-                <MDBBtn tag="a" floating size="sm" className="mx-1 mb-0 btn-git">
-                  <MDBIcon icon="github" />
-                </MDBBtn>
-              </MDBCol>
-  
-              <MDBCol md="4" className="mb-md-0 mb-5">
-                {/* <MDBAvatar
-                  tag="img"
-                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
-                  className="rounded z-depth-1-half img-fluid"
-                  alt="Sample avatar"
-                /> */}
-                <h4 className="font-weight-bold dark-grey-text my-4">
-                  Sarah Melyah
-                </h4>
-                <h6 className="text-uppercase grey-text mb-3">Web Developer</h6>
-                <MDBBtn tag="a" floating size="sm" className="mx-1 mb-0 btn-li">
-                  <MDBIcon icon="linkedin" />
-                </MDBBtn>
-                <MDBBtn tag="a" floating size="sm" className="mx-1 mb-0 btn-tw">
-                  <MDBIcon icon="twitter" />
-                </MDBBtn>
-                <MDBBtn tag="a" floating size="sm" className="mx-1 mb-0 btn-pin">
-                  <MDBIcon icon="pinterest" />
-                </MDBBtn>
-              </MDBCol>
-            </MDBRow>
-          </MDBCardBody>
-        </MDBCard>
-     </div>
-    );  
+      <div>
+        <Header
+          color="transparent"
+          brand="Marketplace.vn"
+          rightLinks={<HeaderLinks />}
+          fixed
+          changeColorOnScroll={{
+            height: 200,
+            color: "info"
+          }}
+          {...rest}
+        />
+        <CustomParallax/>
+        <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className="container" style={{zIndex:100}}>
+        <ProductContent/>
+        </div>
+        </div>
+        <ProductConcern/>
+      </div>
+    );
   }
 }
 
-export default ProductPage;
+export default withStyles(landingPageStyle)(ProductPage);
