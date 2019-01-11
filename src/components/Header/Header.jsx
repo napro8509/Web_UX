@@ -16,7 +16,7 @@ import Menu from "@material-ui/icons/Menu";
 // core components
 import headerStyle from "assets/jss/material-kit-react/components/headerStyle.jsx";
 import { Link } from "react-router-dom";
-import logo from "assets/img/logo_white.png";
+import logo from "assets/img/logo-svg.png";
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -79,7 +79,7 @@ class Header extends React.Component {
         <img
           alt="..."
           src={logo}
-          style={{height:70}}
+          style={{height:30}}
         />
     </Link>
     );

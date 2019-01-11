@@ -5,8 +5,8 @@ import classNames from "classnames";
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import Camera from "@material-ui/icons/Camera";
-import Palette from "@material-ui/icons/Palette";
-import Favorite from "@material-ui/icons/Favorite";
+import Palette from "@material-ui/icons/PhonelinkRing";
+import Favorite from "@material-ui/icons/DirectionsCar";
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 // core components
@@ -31,6 +31,14 @@ import work2 from "assets/img/phone2.jpg";
 import work3 from "assets/img/phone3.jpg";
 import work4 from "assets/img/phone4.jpg";
 import work5 from "assets/img/phone5.jpg";
+import colorado from "assets/img/colorado.jpg";
+import janus from "assets/img/janus.jpg";
+import innova from "assets/img/Innova.jpg";
+import taurus from 'assets/img/taurus.jpg';
+import sirius from 'assets/img/sirius_hanquoc.jpg';
+import galaxys7 from 'assets/img/galaxys7.jpg';
+import exciter from 'assets/img/exciter.JPG';
+
 import { Category, Search } from "@material-ui/icons";
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 import SectionCarousel from "../Components/Sections/SectionCarousel";
@@ -41,6 +49,7 @@ import Drawer, { numbers } from "../../components/Map/Drawer";
 import ProductPage from "../Features/ProductPage";
 import './styles.css'
 import Item from "../../components/Map/Components/Item";
+import Text from "../../components/Map/Components/Reuse/Text";
 class HomePage extends React.Component {
 
   constructor(props) {
@@ -55,7 +64,7 @@ class HomePage extends React.Component {
   componentWillMount() {
     window.addEventListener('resize', this.handleWindowSizeChange);
   }
-  
+
   handleWindowSizeChange = () => {
     this.setState({ width: window.innerWidth });
   };
@@ -79,7 +88,7 @@ class HomePage extends React.Component {
   }
 
   indexChange = (index) => {
-    this.setState({selectedIndex:index})
+    this.setState({ selectedIndex: index })
   }
 
   render() {
@@ -94,8 +103,11 @@ class HomePage extends React.Component {
     );
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
     const { selectedIndex } = this.state;
-    const listItems = numbers.map((number) =>
-    <Item item={number}/>
+    const listItems = numbers.map((number,index) =>
+    index<11 ? <Item item={number} /> : null
+    );
+    const listItems1 = numbers.map((number,index) =>
+    index>10 ? <Item item={number} /> : null
   );
     return (
       <div className="wrapper">
@@ -168,20 +180,20 @@ class HomePage extends React.Component {
                 <p style={{marginLeft:10, marginRight: 10, marginTop: 5, marginBottom:5}}>Iphone x</p>
               </Grid> */}
                 <div className="d-flex md-6 example-parent" >
-                  <div className="col-example p-1" style={{ borderRadius: 10, borderWidth: 1, background: selectedIndex === 1 ? '#00acc1' : 'white', borderStyle: 'solid', borderColor: '#00acc1',cursor:'pointer' }} onClick={() =>this.indexChange(1)}>
-                    <p style={{ margin: 0, color: selectedIndex===1?'white':'black' }}>Iphone X</p>
+                  <div className="col-example p-1" style={{ borderRadius: 10, borderWidth: 1, background: selectedIndex === 1 ? '#00acc1' : 'white', borderStyle: 'solid', borderColor: '#00acc1', cursor: 'pointer' }} onClick={() => this.indexChange(1)}>
+                    <p style={{ margin: 0, color: selectedIndex === 1 ? 'white' : 'black' }}>Iphone X</p>
                   </div>
-                  <div className="mr-auto col-example p-1" style={{ borderRadius: 10, borderWidth: 1, borderColor: '#00acc1', borderStyle: 'solid', background: selectedIndex === 2 ? '#00acc1' : 'white',cursor:'pointer'  }} onClick={()=>this.indexChange(2)}>
-                    <p style={{ margin: 0,color: selectedIndex===2?'white':'black' }}>Samsung Galaxy Note 8</p>
+                  <div className="mr-auto col-example p-1" style={{ borderRadius: 10, borderWidth: 1, borderColor: '#00acc1', borderStyle: 'solid', background: selectedIndex === 2 ? '#00acc1' : 'white', cursor: 'pointer' }} onClick={() => this.indexChange(2)}>
+                    <p style={{ margin: 0, color: selectedIndex === 2 ? 'white' : 'black' }}>Samsung Galaxy Note 8</p>
                   </div>
-                  <div className="col-example p-1" style={{ borderRadius: 10, borderWidth: 1, borderColor: '#00acc1', borderStyle: 'solid', background: selectedIndex === 3 ? '#00acc1' : 'white',cursor:'pointer' }} onClick={()=>this.indexChange(3)}>
-                    <p style={{ margin: 0,color: selectedIndex===3?'white':'black' }}>3 Km</p>
+                  <div className="col-example p-1" style={{ borderRadius: 10, borderWidth: 1, borderColor: '#00acc1', borderStyle: 'solid', background: selectedIndex === 3 ? '#00acc1' : 'white', cursor: 'pointer' }} onClick={() => this.indexChange(3)}>
+                    <p style={{ margin: 0, color: selectedIndex === 3 ? 'white' : 'black' }}>3 Km</p>
                   </div>
-                  <div className="col-example p-1" style={{ borderRadius: 10, borderWidth: 1, borderColor: '#00acc1', borderStyle: 'solid', background: selectedIndex === 4 ? '#00acc1' : 'white',cursor:'pointer' }} onClick={()=>this.indexChange(4)}>
-                    <p style={{ margin: 0,color: selectedIndex===4?'white':'black' }}>5 Km</p>
+                  <div className="col-example p-1" style={{ borderRadius: 10, borderWidth: 1, borderColor: '#00acc1', borderStyle: 'solid', background: selectedIndex === 4 ? '#00acc1' : 'white', cursor: 'pointer' }} onClick={() => this.indexChange(4)}>
+                    <p style={{ margin: 0, color: selectedIndex === 4 ? 'white' : 'black' }}>5 Km</p>
                   </div>
-                  <div className="col-example p-1" style={{ borderRadius: 10, borderWidth: 1, borderColor: '#00acc1', borderStyle: 'solid', background: selectedIndex === 5 ? '#00acc1' : 'white',cursor:'pointer' }} onClick={()=>this.indexChange(5)}>
-                    <p style={{ margin: 0,color: selectedIndex===5?'white':'black' }}>10 Km</p>
+                  <div className="col-example p-1" style={{ borderRadius: 10, borderWidth: 1, borderColor: '#00acc1', borderStyle: 'solid', background: selectedIndex === 5 ? '#00acc1' : 'white', cursor: 'pointer' }} onClick={() => this.indexChange(5)}>
+                    <p style={{ margin: 0, color: selectedIndex === 5 ? 'white' : 'black' }}>10 Km</p>
                   </div>
                 </div>
               </div>
@@ -265,144 +277,226 @@ class HomePage extends React.Component {
             <Drawer show={this.state.showDrawer} onClose={this.closeDrawer.bind(this)}
             />
           </div>
-          <GridContainer md={12} style={{marginLeft:0,marginRight:0}}>
-          <GridItem xs={12} sm={12} md={12} align="center">
-              <h2 className={classes.title}>Sản phẩm nổi bật nhất</h2>
-            </GridItem>
-          <GridItem md={6} style={isMobile ? {padding:0}: {padding:20}}>
-            {listItems}
-          </GridItem>
-          <GridItem md={6} style={isMobile ? {padding:0}: {padding:20}}>
-            {listItems}
-          </GridItem>
-          </GridContainer>
+          <div className="container" style={{ paddingLeft: 0, paddingRight: 0 }}>
+            <GridContainer md={12} style={{ marginLeft: 0, marginRight: 0 }}>
+              <GridItem xs={12} sm={12} md={12} align="center">
+                <h2 className={classes.title}>Sản phẩm nổi bật nhất</h2>
+              </GridItem>
+              <GridItem md={6} style={isMobile ? { padding: 0 } : { padding: 20 }}>
+                {listItems}
+              </GridItem>
+              <GridItem md={6} style={isMobile ? { padding: 0 } : { padding: 20 }}>
+                {listItems1}
+              </GridItem>
+            </GridContainer>
+          </div>
           <div className="d-flex justify-content-center m-4">
-          <Paginations
-                  pages={[
-                    { text: 1 },
-                    { text: "..." },
-                    { text: 5 },
-                    { text: 6 },
-                    { active: true, text: 7 },
-                    { text: 8 },
-                    { text: 9 },
-                    { text: "..." },
-                    { text: 12 }
-                  ]}
-                />
+            <Paginations
+              pages={[
+                { text: 1 },
+                { text: "..." },
+                { text: 5 },
+                { text: 6 },
+                { active: true, text: 7 },
+                { text: 8 },
+                { text: 9 },
+                { text: "..." },
+                { text: 12 }
+              ]}
+            />
           </div>
 
           <div>
             <div className={classes.container}>
+              <GridItem xs={12} sm={12} md={12} align="center">
+                <h2 className={classes.title}>Sản phẩm từ doanh nghiệp</h2>
+              </GridItem>
               <SectionCarousel />
               <GridContainer justify="center">
+                <GridItem xs={12} sm={12} md={12} align="center">
+                  <h2 className={classes.title}>Danh Mục Sản Phẩm Được Yêu Thích</h2>
+                </GridItem>
                 <GridItem xs={12} sm={12} md={12} className={classes.navWrapper}>
                   <NavPills
                     alignCenter
                     color="warning"
                     tabs={[
                       {
-                        tabButton: "Studio",
+                        tabButton: "Quần Áo",
                         tabIcon: Camera,
                         tabContent: (
                           <GridContainer justify="center">
-                            <GridItem xs={12} sm={12} md={6}>
+                            <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
                                 src={studio1}
                                 className={navImageClasses}
                               />
+                              <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
+                                <p style={{ margin: 0 }}>Áo Khoác Âu Mỹ: &nbsp;</p>
+                                <Text type='h4-price' title={"900.000 đ"}></Text>
+                              </GridContainer>
                               <img
                                 alt="..."
                                 src={studio2}
                                 className={navImageClasses}
                               />
+                              <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
+                                <p style={{ margin: 0 }}>Set đồ thể thao: &nbsp;</p>
+                                <Text type='h4-price' title={"1.500.000 đ"}></Text>
+                              </GridContainer>
                             </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
+                            <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
                                 src={studio5}
                                 className={navImageClasses}
                               />
+                              <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
+                                <p style={{ margin: 0 }}>Áo Len Hàn Quốc: &nbsp;</p>
+                                <Text type='h4-price' title={"500.000 đ"}></Text>
+                              </GridContainer>
                               <img
                                 alt="..."
                                 src={studio4}
                                 className={navImageClasses}
                               />
+                              <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
+                                <p style={{ margin: 0 }}>Túi Da Cá Sấu: &nbsp;</p>
+                                <Text type='h4-price' title={"750.000 đ"}></Text>
+                              </GridContainer>
                             </GridItem>
                           </GridContainer>
                         )
                       },
                       {
-                        tabButton: "Work",
+                        tabButton: "Điện Thoại",
                         tabIcon: Palette,
                         tabContent: (
                           <GridContainer justify="center">
-                            <GridItem xs={12} sm={12} md={6}>
+                            <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
                                 src={work1}
                                 className={navImageClasses}
                               />
+                              <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
+                                <p style={{ margin: 0 }}>Xiaomi Note 3 Pro: &nbsp;</p>
+                                <Text type='h4-price' title={"4.750.000 đ"}></Text>
+                              </GridContainer>
                               <img
                                 alt="..."
                                 src={work2}
                                 className={navImageClasses}
                               />
+                              <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
+                                <p style={{ margin: 0 }}>Samsung Galaxy Note 8: &nbsp;</p>
+                                <Text type='h4-price' title={"16.000.000 đ"}></Text>
+                              </GridContainer>
                               <img
                                 alt="..."
                                 src={work3}
                                 className={navImageClasses}
                               />
+                              <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
+                                <p style={{ margin: 0 }}>Iphone 6s: &nbsp;</p>
+                                <Text type='h4-price' title={"5.550.000 đ"}></Text>
+                              </GridContainer>
                             </GridItem>
-                            <GridItem xs={12} sm={12} md={6}>
+                            <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
                                 src={work4}
                                 className={navImageClasses}
                               />
+                              <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
+                                <p style={{ margin: 0 }}>Huawei P20 Premium &nbsp;</p>
+                                <Text type='h4-price' title={"6.750.000 đ"}></Text>
+                              </GridContainer>
                               <img
                                 alt="..."
                                 src={work5}
                                 className={navImageClasses}
                               />
+                              <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
+                                <p style={{ margin: 0 }}>Lenovo Pentium : &nbsp;</p>
+                                <Text type='h4-price' title={"4.050.000 đ"}></Text>
+                              </GridContainer>
+                              <img
+                                alt="..."
+                                src={galaxys7}
+                                className={navImageClasses}
+                              />
+                              <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
+                                <p style={{ margin: 0 }}>Samsung Galaxy S7 : &nbsp;</p>
+                                <Text type='h4-price' title={"8.050.000 đ"}></Text>
+                              </GridContainer>
                             </GridItem>
                           </GridContainer>
                         )
                       },
                       {
-                        tabButton: "Favorite",
+                        tabButton: "Xe Cộ",
                         tabIcon: Favorite,
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work4}
+                                src={sirius}
                                 className={navImageClasses}
                               />
+                              <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
+                                <p style={{ margin: 0 }}>Honda Sirius : &nbsp;</p>
+                                <Text type='h4-price' title={"14.050.000 đ"}></Text>
+                              </GridContainer>
                               <img
                                 alt="..."
-                                src={studio3}
+                                src={innova}
                                 className={navImageClasses}
                               />
+                              <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
+                                <p style={{ margin: 0 }}>Innova 2016 : &nbsp;</p>
+                                <Text type='h4-price' title={"500.000.000 đ"}></Text>
+                              </GridContainer>
+                              <img
+                                alt="..."
+                                src={exciter}
+                                className={navImageClasses}
+                              />
+                              <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
+                                <p style={{ margin: 0 }}>Exciter 2016 : &nbsp;</p>
+                                <Text type='h4-price' title={"35.000.000 đ"}></Text>
+                              </GridContainer>
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work2}
+                                src={taurus}
                                 className={navImageClasses}
                               />
+                              <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
+                                <p style={{ margin: 0 }}>Taurus : &nbsp;</p>
+                                <Text type='h4-price' title={"10.000.000 đ"}></Text>
+                              </GridContainer>
                               <img
                                 alt="..."
-                                src={work1}
+                                src={colorado}
                                 className={navImageClasses}
                               />
+                              <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
+                                <p style={{ margin: 0 }}>Colorado : &nbsp;</p>
+                                <Text type='h4-price' title={"450.000.000 đ"}></Text>
+                              </GridContainer>
                               <img
                                 alt="..."
-                                src={studio1}
+                                src={janus}
                                 className={navImageClasses}
                               />
+                              <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
+                                <p style={{ margin: 0 }}>Jannus: &nbsp;</p>
+                                <Text type='h4-price' title={"23.000.000 đ"}></Text>
+                              </GridContainer>
                             </GridItem>
                           </GridContainer>
                         )
@@ -414,7 +508,6 @@ class HomePage extends React.Component {
             </div>
           </div>
         </div>
-        <ProductPage />
         <Footer />
       </div>
     );

@@ -3,7 +3,7 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
+import Chat from "@material-ui/icons/Motorcycle";
 import VerifiedUser from "@material-ui/icons/VerifiedUser";
 import Fingerprint from "@material-ui/icons/Fingerprint";
 // core components
@@ -20,7 +20,7 @@ class ProductSection extends React.Component {
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2 className={classes.title}>Let's talk product</h2>
+            <h2 className={classes.title}>Chưa bao giờ mua sắm dễ dàng đến thế!</h2>
             <h5 className={classes.description}>
               This is the paragraph where you can write more details about your
               product. Keep you user engaged by providing meaningful
@@ -34,7 +34,7 @@ class ProductSection extends React.Component {
           <GridContainer>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Free Chat"
+                title="Fast Transport"
                 description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
                 icon={Chat}
                 iconColor="info"

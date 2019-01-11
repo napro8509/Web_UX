@@ -13,6 +13,7 @@ import carouselStyle from "assets/jss/material-kit-react/views/componentsSection
 import image1 from "assets/img/electronic.jpg";
 import image2 from "assets/img/home.jpg";
 import image3 from "assets/img/motor.jpg";
+import Text from "../../../components/Map/Components/Reuse/Text";
 
 class SectionCarousel extends React.Component {
   render() {
@@ -23,7 +24,7 @@ class SectionCarousel extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: false
+      autoplay: true
     };
     return (
       <div className={classes.section}>
@@ -39,6 +40,11 @@ class SectionCarousel extends React.Component {
                       className="slick-image"
                     />
                     <div className="slick-caption">
+                    <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem",background:'black', borderRadius:6 }} className="ml-1">
+                    <LocationOn className="slick-icons" style={{ top:0 }}/>
+                                <p style={{ margin: 0 }}>Lâm Phong Store : &nbsp;</p>
+                                <Text type='h4-price' title={"Hàng Nhập Khẩu Chính Hãng Từ Apple"}></Text>
+                              </GridContainer>
                                         </div>
                   </div>
                   <div>
@@ -48,10 +54,11 @@ class SectionCarousel extends React.Component {
                       className="slick-image"
                     />
                     <div className="slick-caption">
-                      <h4>
-                        <LocationOn className="slick-icons" />Somewhere Beyond,
-                        United States
-                      </h4>
+                    <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem",background:'black', borderRadius:6 }} className="ml-1">
+                    <LocationOn className="slick-icons"  style={{ top:0 }}/>
+                                <p style={{ margin: 0 }}>Dulux 2040 : &nbsp;</p>
+                                <Text type='h4-price' title={"Ngoại Thất Cao Cấp Cho Nhà Bạn"}></Text>
+                              </GridContainer>
                     </div>
                   </div>
                   <div>
@@ -61,10 +68,11 @@ class SectionCarousel extends React.Component {
                       className="slick-image"
                     />
                     <div className="slick-caption">
-                      <h4>
-                        <LocationOn className="slick-icons" />Yellowstone
-                        National Park, United States
-                      </h4>
+                    <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem",background:'black', borderRadius:6 }} className="ml-1">
+                    <LocationOn className="slick-icons"  style={{ top:0 }}/>
+                                <p style={{ margin: 0 }}>Thưởng Motor : &nbsp;</p>
+                                <Text type='h4-price' title={"Xe Motor Phân Khối Lớn Chính Hãng"}></Text>
+                              </GridContainer>
                     </div>
                   </div>
                 </Carousel>
