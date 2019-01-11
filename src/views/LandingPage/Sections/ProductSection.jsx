@@ -20,13 +20,9 @@ class ProductSection extends React.Component {
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2 className={classes.title}>Chưa bao giờ mua sắm dễ dàng đến thế!</h2>
+            <h2 className={classes.title}>Never shopping so easily!</h2>
             <h5 className={classes.description}>
-              This is the paragraph where you can write more details about your
-              product. Keep you user engaged by providing meaningful
-              information. Remember that by this time, the user is curious,
-              otherwise he wouldn't scroll to get here. Add a button if you want
-              the user to see more.
+            Our products are always in harmony to bring customers the best experience and more products that are on the market with many different features aimed at providing new things for users. Users can sell things quickly and conveniently, with support from many global search technologies, your products will be sold as quickly as possible.
             </h5>
           </GridItem>
         </GridContainer>
@@ -35,7 +31,7 @@ class ProductSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
                 title="Fast Transport"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                description="To ensure peace of mind, security and customer satisfaction, we always integrate solutions that help secure applications effective for users such as phone number verification to ensure fraud and integration of AI. to control product content and users ..."
                 icon={Chat}
                 iconColor="info"
                 vertical
@@ -53,7 +49,7 @@ class ProductSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
                 title="Fingerprint"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                description="Website providing services can help you trade quickly and conveniently with the specific catalog system, you can search according to your current location with all products on the application."
                 icon={Fingerprint}
                 iconColor="danger"
                 vertical

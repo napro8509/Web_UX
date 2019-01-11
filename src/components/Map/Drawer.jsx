@@ -27,145 +27,145 @@ import ban from 'assets/img/ban.jpg';
 import phone3 from 'assets/img/phone3.jpg';
 export const numbers =[{
   name:'Samsung Galaxy J8',
-  description: 'Máy mới mua, dùng ngon, phụ kiện đầy đủ',
-  place: 'Số 3 đường 41 phường linh đông, quận thử đức',
-  price: '12.000.000',
+  description: 'New machine to buy, delicious, full accessories',
+  place: 'No. 3 Road 41 ward linh dong, Thu Duc district',
+  price: '12.000.000 VNĐ',
   image: work1,
   distance: '1.5 km'
 },{
     name: 'Samsung Galaxy S7',
-    description: 'Hàng xách tay Hàn Quốc',
-    place: 'Số 13 đường Kha Vạn Cân, quận thử đức',
-    price: '3.000.000',
+    description: 'Korean portable goods',
+    place: 'No. 13 Kha Van Can Street, Thu Duc district',
+    price: '3.000.000 VNĐ',
     image: work2,
     distance: '2.5 km'
 },{
-    name: 'Nhà đất 100m2',
-    description: 'Nhà 2 mặt tiền, rộng rãi thoáng mát, có chỗ đậu xe hơi',
-    place: 'Số 3 đường 41 phường linh đông, quận thử đức',
-    price: '5.000.000.000',
+    name: '100m2 House',
+    description: 'House 2 frontage, spacious and airy, with car parking',
+    place: 'No. 3 Road 41 ward Linh Dong, Thu Duc district',
+    price: '5.000.000.000 VNĐ',
     image: home,
     distance: '3.5 km'
 },{
-    name: 'Xe oto Toyota Mescedes Suzuki',
-    description: 'Xe nhập nguyên chiếc từ campuchia chất lượng tốt, giá rẻ',
-    place: 'Số 3 đường 41 phường linh đông, quận thử đức',
-    price: '500.000.000',
+    name: 'Toyota car Mescedes Suzuki',
+    description: 'Imported cars from Cambodia, good quality, cheap price',
+    place: 'No. 3 Road 41 ward Linh Dong, Thu Duc district',
+    price: '500.000.000 VNĐ',
     image: toyota,
     distance: '4 km'
 },{
-    name: 'Bộ Salon gõ gỗ quý',
-    description: 'Gia công tỉ mỉ, độ bền cao',
-    place: 'Số 3 đường 41 phường linh đông, quận thử đức',
-    price: '52.000.000',
+    name: 'Salon set knocked on precious wood',
+    description: 'Meticulous machining, high durability',
+    place: 'No. 3 Road 41 ward Linh Dong,  Thu Duc district',
+    price: '52.000.000 VNĐ',
     image: banghe,
     distance: '6 km'
 },
 {
   name:'Sirius HQ',
-  description: 'Sirius HQ Màu trắng xanh GP, bánh tăm thắng đĩa',
-  place: 'Phường Bình Trị Đông, Quận Bình Tân, Tp Hồ Chí Minh',
-  price: '9.390.000',
+  description: 'Ssirius HQ Blue and white GP, disc brake wheel',
+  place: 'Binh Tri Dong Ward, Binh Tan District, Ho Chi Minh City',
+  price: '9.390.000 VNĐ',
   image: sirius,
   distance: '1.5 km'
 },{
     name: 'Taurus 2011',
-    description: 'Taurus 2011.trùm mền còn khá mới nguyên zin',
-    place: 'Phường Hiệp Thành, Quận 12, Tp Hồ Chí Minh',
-    price: '8.200.000',
+    description: '2011 Taurus. The blanket is quite new',
+    place: 'Hiep Thanh Ward, District 12, Ho Chi Minh City',
+    price: '8.200.000 VNĐ',
     image: taurus,
     distance: '2.5 km'
 },{
-    name: 'Xe Innova',
-    description: 'Xe Innova gia đình cần bán để đổi Fortuner dầu',
-    place: 'Phường Thới An, Quận 12, Tp Hồ Chí Minh',
-    price: '695.000.000',
+    name: 'Innova car',
+    description: 'Innova family car for sale to change Fortuner oil',
+    place: 'Thoi An Ward, District 12, Ho Chi Minh City',
+    price: '695.000.000 VNĐ',
     image: innova,
     distance: '3.5 km'
 },{
     name: 'Yamaha Janus',
-    description: 'Yamaha Janus Bstp 1đơi chủ nữ chạy',
-    place: 'Quận 9, Tp Hồ Chí Minh',
-    price: '23.000.000',
+    description: 'Yamaha Janus Bstp 1 female owner runs',
+    place: 'District 9, Ho Chi Minh City',
+    price: '23.000.000 VNĐ',
     image: janus,
     distance: '4 km'
 },{
     name: 'CHEVROLET COLORADO',
-    description: 'CHEVROLET COLORADO Ưa Đãi T1, Dịp Tết Kỷ Hợi. HOT',
-    place: 'Phường 3, Quận 8, Tp Hồ Chí Minh',
-    price: '624.000.000',
+    description: 'CHEVROLET COLORADO Popular T1, Lunar New Year. HOT',
+    place: 'Ward 3, District 8, Ho Chi Minh City',
+    price: '624.000.000 VNĐ',
     image: colorado,
     distance: '6 km'
 },
 {
   name:'FDS 28 Daikin Inverter',
   description: 'FDS 28 Daikin Inverter 1.5hp ion 95%',
-  place: 'Quận Gò Vấp, Tp Hồ Chí Minh',
-  price: '4.850.000',
+  place: 'Go Vap District, Ho Chi Minh City',
+  price: '4.850.000 VNĐ',
   image: inverter,
   distance: '1.5 km'
 },{
-    name: 'Bán bộ đi văng gõ',
-    description: 'Đi văng gõ (sập) dài 3m25 rộng 1m97(2 tấm ghép lại) dày 20cm, chân đuc tay tứ quí. Xem hang tai tp HCM',
-    place: 'Quận 12, Tp Hồ Chí Minh',
-    price: '270.000.000',
+    name: 'Sell set of couches knocked',
+    description: 'Softer knocking (collapsing) 3m25 long, 1m97 wide (2 composite panels) 20cm thick, limbs in the quarter. See the cave in Ho Chi Minh City',
+    place: 'District 12, Ho Chi Minh City',
+    price: '270.000.000 VNĐ',
     image: sapgo,
     distance: '2.5 km'
 },{
-    name: 'Nồi cơm nội địa Nhật',
-    description: 'Nồi cơm nội địa Nhật mới 98%( secondhand )',
-    place: '2A đường số 9, cư xá ra đa, f13, q6, tphcm',
-    price: '1.500.000',
+    name: 'Japanese domestic rice cooker',
+    description: 'New domestic rice cooker 98% (secondhand)',
+    place: '2A street No. 9, residence lot, f13, q6, HCM',
+    price: '1.500.000 VNĐ',
     image: noicomdien,
     distance: '3.5 km'
 },{
-    name: 'Bàn ăn cherry 4 ghế hàng xuất khẩu',
-    description: 'Bàn ăn cherry gỗ cao su xuất khẩu',
-    place: 'Phường 2, Quận Phú Nhuận, Tp Hồ Chí Minh',
-    price: '3.750.000',
+    name: 'Cherry table with 4 chairs for export',
+    description: 'Export wooden cherry table for export',
+    place: 'Ward 2, Phu Nhuan District, Ho Chi Minh City',
+    price: '3.750.000 VNĐ',
     image: ban,
     distance: '4 km'
 },{
-    name: 'tủ lạnh sAMSUNG Inverter 265L',
-    description: 'tủ lạnh sAMSUNG Inverter 265L mới 89%, bh 6 tháng, ngăn rộng, chạy êm, mát lạnh nhanh, tiện dụng',
-    place: 'Phường Tân Sơn Nhì, Quận Tân Phú, Tp Hồ Chí Minh',
-    price: '3.700.000',
+    name: 'SAMSUNG Refrigerator Inverter 265L',
+    description: 'SBAMS refrigerator Inverter 265L new 89%, 6 months, wide compartment, running smoothly, cool, quick and convenient',
+    place: 'Tan Son Nhi Ward, Tan Phu District, Ho Chi Minh City',
+    price: '3.700.000 VNĐ',
     image: tulanh,
     distance: '6 km'
 },
 {
   name:'iPhone 7',
-  description: 'Apple iPhone 7 Plus Quốc Tế | Có Bán Trả Góp',
-  place: '44/2 Phường 7, Quận Gò Vấp, Tp Hồ Chí Minh',
-  price: '9.390.000',
+  description: 'Apple iPhone 7 Plus International Have a Installment Sale',
+  place: '44/2 Ward 7, Go Vap District, Ho Chi Minh City',
+  price: '9.390.000 VNĐ',
   image: iphone6s,
   distance: '1.5 km'
 },{
     name: 'iPhone 6S',
-    description: 'Apple iPhone 6S Plus Quốc Tế | Có Bán Trả Góp',
-    place: 'Phường 7, Quận Gò Vấp, Tp Hồ Chí Minh',
-    price: '6.690.000',
+    description: 'Apple iPhone 6S Plus International Have a Installment Sale',
+    place: 'Ward 7, Go Vap District, Ho Chi Minh City',
+    price: '6.690.000 VNĐ',
     image: phone3,
     distance: '2.5 km'
 },{
     name: 'Galaxy S7',
-    description: 'Đăng bán em Galaxy S7 2sim máy xài ngon bao lỗi',
-    place: 'Quận 12, Tp Hồ Chí Minh',
-    price: '3.290.000',
+    description: 'Sign up for Galaxy S7 2sim to use it to make a mistake',
+    place: 'District 12, Ho Chi Minh City',
+    price: '3.290.000 VNĐ',
     image: galaxys7,
     distance: '3.5 km'
 },{
     name: 'Galaxy J5',
-    description: 'Đăng bán em Galaxy J5 2sim máy xài ngon bao lỗi',
-    place: 'Quận 9, Tp Hồ Chí Minh',
-    price: '1.650.000',
+    description: 'Sign up for a delicious and error-free Galaxy J5 2sim',
+    place: 'District 9, Ho Chi Minh City',
+    price: '1.650.000 VNĐ',
     image: galaxyj5,
     distance: '4 km'
 },{
     name: 'LENOVO',
-    description: 'LENOVO 14"+Xoay 360+Máy đời mới+Đẹp keng+i3 ^7',
-    place: 'Quận Bình Thạnh, Tp Hồ Chí Minh',
-    price: '6.500.000',
+    description: 'LENOVO 14 "+ 360 Rotation + New machine + Beautiful keng + i3 ^ 7',
+    place: 'Binh Thanh District, Ho Chi Minh City',
+    price: '6.500.000 VNĐ',
     image: lenovo,
     distance: '6 km'
 }

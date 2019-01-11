@@ -203,21 +203,31 @@ class HomePage extends React.Component {
                 <GridItem xs={12} sm={12} md={4} align="center">
                   <CustomDropdown
                     hoverColor="info"
-                    dropdownHeader="Dropdown Header"
+                    dropdownHeader="Select area where you live"
                     buttonIcon="settings"
-                    buttonText="Địa điểm"
+                    buttonText="Place"
                     buttonProps={{
                       className: classes.navLink,
                       color: "transparent"
                     }}
                     dropdownList={[
-                      "Action",
-                      "Another action",
-                      "Something else here",
+                      "Ho Chi Minh City",
+                      "Binh Duong",
+                      "Dong Nai",
+                      "Da Lat",
+                      "Tien Gianh",
+                      "Can Tho",
                       { divider: true },
-                      "Separated link",
+                      "Quang Ngai",
+                      "Quang Nam",
+                      "Nghe An",
+                      "Binh Thuan",
                       { divider: true },
-                      "One more separated link"
+                      "Ha Noi",
+                      "Quang Binh",
+                      "Ha Tinh",
+                      "Nam Dinh",
+                      "Bac Can"
                     ]}
                     onClick={this.onClick.bind(this)}
                   />
@@ -225,21 +235,29 @@ class HomePage extends React.Component {
                 <GridItem xs={12} sm={12} md={4} align="center">
                   <CustomDropdown
                     hoverColor="info"
-                    dropdownHeader="Loại sản phẩm"
+                    dropdownHeader="Product type"
                     buttonIcon={() => <Category style={classes.icon} />}
-                    buttonText="Danh mục"
+                    buttonText="Category"
                     buttonProps={{
                       className: classes.navLink,
                       color: "transparent"
                     }}
                     dropdownList={[
-                      "Điện tử",
-                      "Nhà",
-                      "Xe",
+                      "Electronic",
+                      "House",
+                      "Car",
                       { divider: true },
-                      "Quần áo",
+                      "Clothes",
                       { divider: true },
-                      "Trang sức"
+                      "Jewelry",
+                      { divider: true },
+                      "Sport",
+                      { divider: true },
+                      "Mother And Baby",
+                      { divider: true },
+                      "Pet",
+                      { divider: true },
+                      "nterior"
                     ]}
                   />
                 </GridItem>
@@ -248,19 +266,20 @@ class HomePage extends React.Component {
                     hoverColor="info"
                     dropdownHeader="Dropdown Header"
                     buttonIcon="filter"
-                    buttonText="Lọc"
+                    buttonText="Filter"
                     buttonProps={{
                       className: classes.navLink,
                       color: "transparent"
                     }}
                     dropdownList={[
+                      "Places",
+                      "Countries",
+                      "Location",
+                      "Distance",
+                      "Categories",
+                      "Price",
                       "Action",
-                      "Another action",
-                      "Something else here",
-                      { divider: true },
-                      "Separated link",
-                      { divider: true },
-                      "One more separated link"
+                      "Frabric"
                     ]}
                   />
                 </GridItem>
@@ -280,7 +299,7 @@ class HomePage extends React.Component {
           <div className="container" style={{ paddingLeft: 0, paddingRight: 0 }}>
             <GridContainer md={12} style={{ marginLeft: 0, marginRight: 0 }}>
               <GridItem xs={12} sm={12} md={12} align="center">
-                <h2 className={classes.title}>Sản phẩm nổi bật nhất</h2>
+                <h2 className={classes.title}>The most outstanding product</h2>
               </GridItem>
               <GridItem md={6} style={isMobile ? { padding: 0 } : { padding: 20 }}>
                 {listItems}
@@ -309,12 +328,12 @@ class HomePage extends React.Component {
           <div>
             <div className={classes.container}>
               <GridItem xs={12} sm={12} md={12} align="center">
-                <h2 className={classes.title}>Sản phẩm từ doanh nghiệp</h2>
+                <h2 className={classes.title}>Products from businesses</h2>
               </GridItem>
               <SectionCarousel />
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={12} align="center">
-                  <h2 className={classes.title}>Danh Mục Sản Phẩm Được Yêu Thích</h2>
+                  <h2 className={classes.title}>List of Favorite Products</h2>
                 </GridItem>
                 <GridItem xs={12} sm={12} md={12} className={classes.navWrapper}>
                   <NavPills
@@ -322,7 +341,7 @@ class HomePage extends React.Component {
                     color="warning"
                     tabs={[
                       {
-                        tabButton: "Quần Áo",
+                        tabButton: "Clothes",
                         tabIcon: Camera,
                         tabContent: (
                           <GridContainer justify="center">
@@ -333,7 +352,7 @@ class HomePage extends React.Component {
                                 className={navImageClasses}
                               />
                               <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
-                                <p style={{ margin: 0 }}>Áo Khoác Âu Mỹ: &nbsp;</p>
+                                <p style={{ margin: 0 }}>European American Jacket: &nbsp;</p>
                                 <Text type='h4-price' title={"900.000 đ"}></Text>
                               </GridContainer>
                               <img
@@ -342,7 +361,7 @@ class HomePage extends React.Component {
                                 className={navImageClasses}
                               />
                               <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
-                                <p style={{ margin: 0 }}>Set đồ thể thao: &nbsp;</p>
+                                <p style={{ margin: 0 }}>Set of sportswear: &nbsp;</p>
                                 <Text type='h4-price' title={"1.500.000 đ"}></Text>
                               </GridContainer>
                             </GridItem>
@@ -353,7 +372,7 @@ class HomePage extends React.Component {
                                 className={navImageClasses}
                               />
                               <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
-                                <p style={{ margin: 0 }}>Áo Len Hàn Quốc: &nbsp;</p>
+                                <p style={{ margin: 0 }}>Korean Sweater: &nbsp;</p>
                                 <Text type='h4-price' title={"500.000 đ"}></Text>
                               </GridContainer>
                               <img
@@ -362,7 +381,7 @@ class HomePage extends React.Component {
                                 className={navImageClasses}
                               />
                               <GridContainer style={{ alignItems: 'center', justifyContent: 'center', marginBottom: "2.142rem" }} className="ml-1">
-                                <p style={{ margin: 0 }}>Túi Da Cá Sấu: &nbsp;</p>
+                                <p style={{ margin: 0 }}>Crocodile Leather Bag: &nbsp;</p>
                                 <Text type='h4-price' title={"750.000 đ"}></Text>
                               </GridContainer>
                             </GridItem>
@@ -370,7 +389,7 @@ class HomePage extends React.Component {
                         )
                       },
                       {
-                        tabButton: "Điện Thoại",
+                        tabButton: "Phone",
                         tabIcon: Palette,
                         tabContent: (
                           <GridContainer justify="center">
@@ -436,7 +455,7 @@ class HomePage extends React.Component {
                         )
                       },
                       {
-                        tabButton: "Xe Cộ",
+                        tabButton: "Vehicle",
                         tabIcon: Favorite,
                         tabContent: (
                           <GridContainer justify="center">

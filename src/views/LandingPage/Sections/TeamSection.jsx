@@ -41,14 +41,11 @@ class TeamSection extends React.Component {
                 <h4 className={classes.cardTitle}>
                   Giô Na
                   <br />
-                  <small className={classes.smallTitle}>Model</small>
+                  <small className={classes.smallTitle}>Manager</small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                  People directly manage all application activities. CEO and founder of the application. Always implement the principles to ensure customer satisfaction.
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
@@ -82,16 +79,13 @@ class TeamSection extends React.Component {
                   <img src={team2} alt="..." className={imageClasses} />
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  Thiên Ấn
+                  Ấn Lê
                   <br />
-                  <small className={classes.smallTitle}>Designer</small>
+                  <small className={classes.smallTitle}>Lead of Technology</small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                  The person who ensures the technique always operates in the most powerful and effective way. Helps the system with high load in many cases. Make sure the server is always stable.
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
@@ -120,14 +114,11 @@ class TeamSection extends React.Component {
                 <h4 className={classes.cardTitle}>
                   Việt Dũng
                   <br />
-                  <small className={classes.smallTitle}>Model</small>
+                  <small className={classes.smallTitle}>Designer</small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                  Who takes care of every interface and user experience on the application, ensuring users get the best experience, beautiful interface and never forgotten.
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
@@ -163,14 +154,11 @@ class TeamSection extends React.Component {
                 <h4 className={classes.cardTitle}>
                   Văn Rin
                   <br />
-                  <small className={classes.smallTitle}>Model</small>
+                  <small className={classes.smallTitle}>Cotenter</small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                  Who is responsible for product content, application content, processes, regulations on all products on the application. It is also the person responsible for checking all products of the user.
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
