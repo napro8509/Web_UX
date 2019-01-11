@@ -45,12 +45,9 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Mua Sắm Gần Nhà, Nhanh Chóng, Dễ Dàng</h1>
+                <h1 className={classes.title}>Shopping Near Home, Fast, Easy</h1>
                 <h4>
-                  Every landing page needs a small description after the big
-                  bold title, that's why we added this text here. Add here all
-                  the information that can make you or your product create the
-                  first impression.
+                  Website providing services can help you trade quickly and conveniently with the specific catalog system, you can search according to your current location with all products on the application.
                 </h4>
                 <br />
                 <Button
@@ -60,7 +57,7 @@ class LandingPage extends React.Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fas fa-play" />Bắt Đầu Trải Nghiệm
+                  <i className="fas fa-play" />Start Experience
                 </Button>
               </GridItem>
             </GridContainer>

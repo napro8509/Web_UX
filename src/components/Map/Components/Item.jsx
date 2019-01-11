@@ -37,7 +37,7 @@ class Item extends React.Component {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <i class="fas fa-map-marker-alt"></i>Xem Vị Trí
+                                <i class="fas fa-map-marker-alt"></i>See Location
                         </Button>
                             <Button
                                 style={{ alignSelf: "flex-start" }}
@@ -47,7 +47,7 @@ class Item extends React.Component {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <i class="fas fa-info-circle"></i>Chi Tiết
+                                <i class="fas fa-info-circle"></i>Detail
                 </Button>
                         </GridContainer>
 
