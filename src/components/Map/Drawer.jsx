@@ -10,7 +10,7 @@ import work2 from "assets/img/phone2.jpg";
 import work3 from "assets/img/phone3.jpg";
 import work4 from "assets/img/phone4.jpg";
 import work5 from "assets/img/phone5.jpg";
-const numbers =[{
+export const numbers =[{
   name:'Samsung Galaxy J8',
   description: 'Máy mới mua, dùng ngon, phụ kiện đầy đủ',
   place: 'Số 3 đường 41 phường linh đông, quận thử đức',
@@ -50,20 +50,42 @@ const numbers =[{
 class Drawer extends React.Component {
     constructor(props){
       super(props)
-      this.state = props
+      this.state = {
+        ...props,
+        width: window.innerWidth,
+      }
       this.drawerStyle = {
         position: 'absolute',
         top: '0px',
         left: '0px',
         height: '100%',
-        width: '25%',
+        width: '30%',
         background: 'white',
         overflowX: 'hidden',
         overflowY: 'scroll',
         webkitOverflowScrolling: 'touch'      
       }
+      this.mobileStyle = {
+        position: 'relative',
+        top: '0px',
+        left: '0px',
+        height: '100%',
+        width: '100%',
+        background: 'white',
+        overflowX: 'hidden',
+        overflowY: 'scroll',
+        webkitOverflowScrolling: 'touch'  
+      }
+    }
+
+    componentWillMount() {
+      window.addEventListener('resize', this.handleWindowSizeChange);
     }
     
+    handleWindowSizeChange = () => {
+      this.setState({ width: window.innerWidth });
+    };
+
     componentWillReceiveProps(nextProps) {
       if(nextProps.show) {
         this.drawerStyle = Object.assign({},this.drawerStyle, {right: '0px'})
@@ -75,6 +97,8 @@ class Drawer extends React.Component {
     }
     
     render() {
+      const { width } = this.state;
+      const isMobile = width <= 500;
       const listItems = numbers.map((number) =>
         <Item item={number}/>
       );
@@ -82,7 +106,7 @@ class Drawer extends React.Component {
         <div>
           {
             this.props.show && 
-            <div id="drawer" style={this.drawerStyle}>
+            <div id="drawer" style={isMobile ? this.mobileStyle : this.drawerStyle}>
               {listItems}
             </div>
           }
